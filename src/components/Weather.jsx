@@ -42,8 +42,8 @@ const Weather = () => {
 
   return (
     <>
-      <div className="flex items-center gap-2.5 bg-[linear-gradient(45deg,_#2f4680,_#500ae4)] p-[40px] rounded-[10px] justify-center flex-col">
-        <div className="flex gap-3">
+      <div className="flex items-center gap-2.5 bg-[linear-gradient(45deg,_#2f4680,_#500ae4)] md:p-[40px] py-[30px] rounded-[10px] justify-center flex-col">
+        <div className="flex gap-3 md:p-0 px-[10px]">
           <input
           onKeyDown={(e) => {
             if(e.key === 'Enter'){
@@ -68,7 +68,7 @@ const Weather = () => {
         <p className="text-white text-7xl">{weatherData.temperature}°C</p>
         <p className="text-white text-2xl">{weatherData.location}</p>
 
-        <div className="w-full mt-[40px] text-white flex justify-between items-center gap-15">
+        <div className="w-full mt-[40px] md:p-0 p-5 text-white flex justify-between items-center gap-15">
           <div className="flex items-center gap-3 text-[22px]">
             <img src={humidity_icon} />
             <div>
